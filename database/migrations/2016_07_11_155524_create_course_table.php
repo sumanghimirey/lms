@@ -18,6 +18,7 @@ class CreateCourseTable extends Migration
             $table->string('institute');
             $table->string('teacher');
             $table->string('category');
+            $table->string('description');
             $table->integer('series_id')->unsigned();
             $table->foreign('series_id')->references('id')
                 ->on('series')

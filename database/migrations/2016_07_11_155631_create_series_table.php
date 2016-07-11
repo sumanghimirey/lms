@@ -15,6 +15,7 @@ class CreateSeriesTable extends Migration
         Schema::create('series', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('name');
             $table->string('description');
             $table->integer('episode_id')->unsigned();
             $table->foreign('episode_id')->references('id')
